@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#titulo {
+    letter-spacing: 35px;
+    text-align: center;
+    padding: 70px;
+}
+.romanos {
+    list-style-type: upper-roman;
+    font-size: 24px;
+    font-weight: bold;
+}
+.hrfino {
+    border: 3px solid blue;
+}
+.hrgordo {
+    border: 6px solid blue;
+}
+.espaciado {
+    margin-top: 200px;
+}
+table {
+    width: 80%;
+}
+.imagentabla {
+    width: 140px;
+    height: 100px;
+}
+table, td {
+    padding: 0;
+    border-spacing: 0;
+}
+.volvermenu {
+    margin-top: 70px;
+}
+ul {
+    list-style-type: square;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ul2 {
+    list-style-type: circle;
+}
+#espaciadoAbajo {
+    margin-bottom: 200px;
+}
+a {
+    color: blue;
+}

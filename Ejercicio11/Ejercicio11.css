@@ -1,0 +1,28 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+html  {
+    font-family: Montserrat;
+}
+#tabla, #tabla tr, #tabla td, #tabla th {
+    border: 1px solid black;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}
+h1 span {
+    color: purple;
+    text-decoration: underline;
+}
+.izquierda {
+    text-align: left;
+}
+#tabla2 {
+    margin-left: 70px;
+    width: 40%;
+}
+#tabla2 th {
+    text-align: left;
+}
+#tabla2 td {
+    padding-left: 40px;
+}

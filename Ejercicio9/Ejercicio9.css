@@ -1,0 +1,21 @@
+h3 {
+    margin-top: 120px;
+}
+span {
+    color: blue;
+}
+dt {
+    font-size: 16px;
+    color: purple;
+    font-weight: bold;
+}
+dd {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+hr {
+    border: 7px solid blue;
+    border-radius: 20px;
+}

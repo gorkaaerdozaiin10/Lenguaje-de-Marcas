@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio14</title>
+    <link rel="stylesheet" href="Ejercicio14.css">
+</head>
+
+<body>
+    <h1>LOGIN</h1>
+    <form method="POST" action="/Ejercicio14/enviado.html">
+        <fieldset id="fieldset1">
+            <legend>Login</legend>
+            <input type="text" name="nombreUsuario" placeholder="USUARIO 4V" required> <br>
+            <input type="password" name="contraseñaUsuario" placeholder="CONTRASEÑA" required>
+            <input type="image" src="submit.png" alt="imagen" width="40" height="40" class="image">
+        </fieldset>
+    </form>
+    <hr>
+    <h1>CONTACTO</h1>
+
+    <form method="POST" action="enviado.html">
+        <fieldset>
+            <legend id="legend2">Perfil</legend>
+            <label>Perfil <br>
+                <input type="radio" name="perfil">Familiar
+                <input type="radio" name="perfil">Alumno/a <br>
+            </label>
+            <label>Teléfono de contacto:
+                <input type="tel" name="phone" maxlength="9" pattern="[0-9]">
+                (9 dígitos)
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Destinatarios y Mensaje</legend>
+            <label>Destinatario (puede elegir más de uno) <br>
+                <input type="checkbox" name="Alberto">Alberto
+                <input type="checkbox" name="Ander">Ander
+                <input type="checkbox" name="Iban">Iban
+                <input type="checkbox" name="María">María
+                <input type="checkbox" name="Luis">Luis
+                <input type="checkbox" name="Merche">Merche
+            </label> <br> <br>
+
+            <label for="listaDesplegable">Motivo: </label>
+            <select id="listaDesplegable">
+                <optgroup label="TUTORÍA">
+                    <option value="Telefonica">Telefónica</option>
+                    <option value="Videollamada">Videollamada</option>
+                    <option value="Presencial">Presencial</option>
+                </optgroup>
+                <optgroup label="REVISIÓN NOTAS">
+                    <option value="BasesdeDatos">Bases de datos</option>
+                    <option value="LMarcas">LMarcas</option>
+                    <option value="Programación">Programación</option>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="Inglés">Inglés</option>
+                    <option value="Entornos">Entornos</option>
+                    <option value="FOL">FOL</option>
+                </optgroup>
+                <optgroup label="OTROS">
+                    <option value="Otro">Otro</option>
+                </optgroup>
+            </select> <br> <br>
+            <label for="areaTexto">Mensaje: <br> </label>
+            <textarea id="areaTexto" cols="57" rows="10">Si en la opción anterior has elegido "Otro", especifica con detalle el motivo, por favor.
+                </textarea>
+
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+#titulo {
+    text-align: center;
+}
+#subtitulo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+li {
+    margin: 18px;
+}
+.hrfino {
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+.hrgordo {
+    border: 10px solid blue;
+    border-radius: 20px;
+}
+#asignaturas {
+    margin-top: 200px;
+}
+#asignaturas span {
+    color: blue;
+}
+#profesores {
+    margin-top: 200px;
+}
+#profesores span {
+    color: green;
+}
+#aplicaciones {
+    margin-top: 200px;
+}
+#aplicaciones span {
+    color: orange;
+}
+#alberto {
+    color: forestgreen;
+}
+#susana {
+    color: red;
+}
+#ander {
+    color: greenyellow;
+}
+#maria {
+    color: blue;
+}
+#luis {
+    color: sandybrown;
+}
+#merche {
+    color: skyblue;
+}
+.cuadrado {
+    list-style-type:square;
+}
+#access {
+    color: darkblue;
+}
+#windows8 {
+    color: black;
+}
+#eclipse {
+    color: darkgreen;
+}
+#visualstudio {
+    color: yellow;
+}
+#english {
+    color: darkred;
+}
+#euskera {
+    color: orangered;
+}

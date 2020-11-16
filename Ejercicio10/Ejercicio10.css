@@ -1,0 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+html {
+    font-family: Montserrat;
+    font-size: 14px;
+}
+table, th, td {
+  border: 1px solid black;
+    margin: auto;
+}
+.celdaDerecha {
+    text-align: right;
+}
+hr {
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+header {
+    height: 100px;
+}
+h1 {
+    font-weight: bold;
+}

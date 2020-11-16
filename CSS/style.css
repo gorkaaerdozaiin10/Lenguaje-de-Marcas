@@ -1,0 +1,10 @@
+/*.centrado {
+    text-align: center;
+}
+.derecha {
+    text-align: right;
+} */
+
+p[class*="e"] {
+    text-align: center;
+}
