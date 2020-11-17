@@ -149,7 +149,6 @@ header div {
   justify-content: space-around;
   width: 12vw;
   align-items: center;
-  /*border: 1px solid red;*/
   cursor: pointer;
 }
 header div img {
@@ -287,7 +286,6 @@ p {
   box-shadow: var(--cardShadow);
   border-radius: 20px;
   transition: 0.5s;
-  min-width: fit-content;
 }
 caption {
   font-size: 2.1em;
@@ -322,12 +320,12 @@ caption {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   padding: 40px 0;
 }
 .section .containerNeumorphism .cardNeumorphism {
   position: relative;
-  min-width: 320px;
+  width: 320px;
   height: 440px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
     inset -5px -5px 5px rgba(255, 255, 255, 0.5),
@@ -387,7 +385,7 @@ caption {
   .cardNeumorphism
   .boxNeumorphism
   .contentNeumorphism
-  ul
+  ol
   li {
   text-align: justify;
   margin-left: 10px;
@@ -449,7 +447,7 @@ caption {
   color: var(--primary-white);
   background: var(--primary-black);
 }
-.formSection {
+.calculatorSection {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -457,7 +455,7 @@ caption {
   margin: auto;
   height: 65vh;
 }
-.formSection .content {
+.calculatorSection .content {
   position: relative;
   display: flex;
   justify-content: center;
@@ -466,11 +464,11 @@ caption {
   height: 40%;
   padding-bottom: 4vh;
 }
-.formSection .content h1 {
+.calculatorSection .content h1 {
   text-align: center;
   font-size: 2.5em;
 }
-.formSection .button {
+.calculatorSection .button {
   position: relative;
   display: flex;
   width: 100%;
@@ -479,7 +477,7 @@ caption {
   align-items: flex-start;
   padding-top: 20px;
 }
-.formSection .button a {
+.calculatorSection .button a {
   padding: 10px 50px;
   font-size: 24px;
   border-radius: 50px;
@@ -487,7 +485,7 @@ caption {
   transition: 0.5s;
   color: var(--primary-black);
 }
-.formSection .button a:hover {
+.calculatorSection .button a:hover {
   background: var(--primary-black);
   color: var(--primary-white);
 }
