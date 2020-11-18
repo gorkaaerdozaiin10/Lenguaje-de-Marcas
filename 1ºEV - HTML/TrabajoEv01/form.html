@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="fontsStyle.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <form class="right" method="GET" action="enviado.html">
+                <h2>¡Escríbenos!</h2>
+                <input type="text" class="field" placeholder="Nombre" required maxlength="30">
+                <input type="text" class="field" placeholder="Apellidos" required maxlength="40">
+                <input type="email" class="field" placeholder="Email" required
+                    oninvalid="setCustomValidity('La dirección de correo debe de contener al menos un signo @')">
+                <input type="text" class="field" placeholder="Teléfono" pattern="[6-7]{1}[0-9]{8}" maxlength="9"
+                    oninvalid="setCustomValidity('Introduce un número válido por favor')">
+                <textarea placeholder="Escribe aquí" class="field" required></textarea>
+                <input type="submit" class="btn">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
