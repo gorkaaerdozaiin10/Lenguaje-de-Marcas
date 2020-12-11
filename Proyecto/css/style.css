@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.max-container {
+  width: 100vw;
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.max-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  background: url(../img/flores.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 12%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+  padding: 0 4em;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+nav .logo {
+  text-decoration: none;
+  color: rgba(248, 248, 248, 0.85);
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.5em 0;
+}
+
+nav ul li.active {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a {
+  margin: 1em;
+  padding: 0.7em 0;
+  text-decoration: none;
+  color: rgba(248, 248, 248, 0.85);
+}
+
+nav:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+#fp-nav ul li a span {
+  background: #f8f8f8;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: #f8f8f8;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .slide {
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100vh;
+}
+
+.section .fp-controlArrow {
+  display: none;
+}
+
+.section .fp-controlArrow.fp-prev, .section .fp-controlArrow.fp-next {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  top: 90%;
+  left: 70%;
+  -webkit-animation: slides 2s linear infinite;
+          animation: slides 2s linear infinite;
+}
+
+@-webkit-keyframes slides {
+  30% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  60% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@keyframes slides {
+  30% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  60% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+.section .fp-controlArrow.fp-prev:hover, .section .fp-controlArrow.fp-next:hover {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.section .fp-controlArrow.fp-next {
+  left: unset;
+  right: 10%;
+}
+
+.section .fp-slidesNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.glider__container {
+  position: relative;
+  width: 80vw;
+}
+
+.glider__container .glider {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+.glider__container .glider img {
+  width: 100%;
+  height: 100%;
+}
+
+.glider__container .glider:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+@-webkit-keyframes buttonAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  50% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  75% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes buttonAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  50% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  75% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.glider__container .button-prev, .glider__container .button-next {
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  opacity: 0.4;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 2.5em;
+  border-radius: 0;
+  background: none;
+  position: absolute;
+  top: 42%;
+  left: -4%;
+  z-index: 1000;
+  -webkit-animation: buttonAnimation 3s linear infinite;
+          animation: buttonAnimation 3s linear infinite;
+}
+
+.glider__container .button-prev:hover, .glider__container .button-next:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0.7;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.glider__container .button-next {
+  right: -4%;
+  left: unset;
+}
+
+.glider__container .dots .glider-dot {
+  margin-top: 5vh;
+  width: 4vw;
+  height: 1.5vh;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+.glider__container .dots .glider-dot.active {
+  background: rgba(0, 0, 0, 0.8);
+}
+/*# sourceMappingURL=style.css.map */

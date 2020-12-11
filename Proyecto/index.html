@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="fontAwesome/js/all.js"></script>
+  <link rel="stylesheet" href="glider.css">
+  <link rel="stylesheet" href="fullpage.css">
+  <link rel="stylesheet" href="sweetalert2.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="max-container">
+    <nav>
+      <a href="#" class="logo">EXAMPLE</a>
+      <ul id="menu">
+        <li data-menuanchor="inicio" class="active">
+          <a href="#inicio">Inicio</a>
+        </li>
+        <li data-menuanchor="final">
+          <a href="#final">Final</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <div id="fullpage">
+      <div class="section">
+
+        <div class="glider__container">
+
+          <button class="button-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="glider">
+            <div><img loading="lazy" src="img/ciudad.jpg" alt=""></div>
+            <div><img loading="lazy" src="img/flores.jpg" alt=""></div>
+            <div><img loading="lazy" src="img/invierno.jpg" alt=""></div>
+            <div><img loading="lazy" src="img/mar.jpg" alt=""></div>
+            <div><img loading="lazy" src="img/niña.jpg" alt=""></div>
+            <div><img loading="lazy" src="img/nubes.jpg" alt=""></div>
+          </div>
+
+          <button class="button-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div class="dots"></div>
+        </div>
+
+      </div>
+
+      <div class="section">
+        <div class="slide">
+          <h1>Hola</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellat, et saepe quas, perferendis sit
+            quia officia delectus consequatur eum est esse eos possimus nulla debitis reiciendis harum eveniet modi?</p>
+        </div>
+        <div class="slide">
+          <h1>Adios</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="fullpage.js"></script>
+  <script src="glider.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

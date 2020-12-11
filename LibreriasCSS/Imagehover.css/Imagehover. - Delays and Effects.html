@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://imagehover.io/docs -->
+<html lang="en" class="js csstransforms3d wf-proximanova-n7-active wf-proximanova-n4-active wf-proximanova-n3-active wf-active sb-init sb-scroll-lock" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <title>Imagehover.css Documentation | imagehover.css</title>
+    <meta name="generator" content="GravCMS">
+<meta name="description" content="Imagehover.css Usage Documentation">
+<meta name="keywords" content="CSS, animation, imagehover, image, hover, library, HTML, howto, usage">
+<meta name="og:title" property="og:title" content="Imagehover.css - A Pure CSS Image Hover Library">
+<meta name="og:type" property="og:type" content="video.movie">
+<meta name="og:url" property="og:url" content="http://www.imagehover.io">
+<meta name="og:image" property="og:image" content="http://www.imagehover.io/imagehover-og.jpg">
+<meta name="twitter:card" property="twitter:card" content="summary">
+<meta name="twitter:site" property="twitter:site" content="twitter:site">
+<meta name="twitter:title" property="twitter:title" content="Imagehover.css">
+<meta name="twitter:description" property="twitter:description" content="A Pure CSS Image Hover Library">
+<meta name="twitter:image" property="twitter:image" content="http://www.imagehover.io/imagehover-og.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="http://imagehover.io/user/themes/antimatter/images/favicon.png">
+    <link rel="canonical" href="http://imagehover.io/docs">
+    <link href="./Imagehover. - Delays and Effects_files/css" rel="stylesheet" type="text/css">
+    <link href="./Imagehover. - Delays and Effects_files/css(1)" rel="stylesheet" type="text/css">
+    <script async="" src="./Imagehover. - Delays and Effects_files/analytics.js(1).descarga"></script><script src="./Imagehover. - Delays and Effects_files/gumroad.js.descarga"></script><script src="./Imagehover. - Delays and Effects_files/gumroad-overlay-5cd5fa5aa7830f92ada5da442cddac61faef15f0bd3f5695d7e17d8cbc24175e.js.descarga"></script>
+    <script src="./Imagehover. - Delays and Effects_files/nqt8qon.js.descarga"></script>
+    <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/399a91/0000000000000000000158cf/23/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/399a91/0000000000000000000158cf/23/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/399a91/0000000000000000000158cf/23/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/477d8d/0000000000000000000158d7/23/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/477d8d/0000000000000000000158d7/23/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/477d8d/0000000000000000000158d7/23/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/3693ba/0000000000000000000158d9/23/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/3693ba/0000000000000000000158d9/23/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/3693ba/0000000000000000000158d9/23/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}</style><script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="./Imagehover. - Delays and Effects_files/jquery.min.js.descarga"></script>
+    <script type="text/javascript" src="./Imagehover. - Delays and Effects_files/gist-embed.min.js.descarga"></script>
+ 
+                                                    
+                        <link href="./Imagehover. - Delays and Effects_files/grids-min.css" type="text/css" rel="stylesheet">
+<link href="./Imagehover. - Delays and Effects_files/nucleus.css" type="text/css" rel="stylesheet">
+<link href="./Imagehover. - Delays and Effects_files/template.css" type="text/css" rel="stylesheet">
+<link href="./Imagehover. - Delays and Effects_files/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="./Imagehover. - Delays and Effects_files/custom.css" type="text/css" rel="stylesheet">
+<link href="./Imagehover. - Delays and Effects_files/form-styles.css" type="text/css" rel="stylesheet">
+<link href="./Imagehover. - Delays and Effects_files/login.css" type="text/css" rel="stylesheet">
+<link href="./Imagehover. - Delays and Effects_files/slidebars.min.css" type="text/css" rel="stylesheet">
+
+
+                                            <script src="./Imagehover. - Delays and Effects_files/jquery-2.x.min.js.descarga" type="text/javascript"></script>
+<script src="./Imagehover. - Delays and Effects_files/modernizr.custom.71422.js.descarga" type="text/javascript"></script>
+<script src="./Imagehover. - Delays and Effects_files/antimatter.js.descarga" type="text/javascript"></script>
+<script src="./Imagehover. - Delays and Effects_files/slidebars.min.js.descarga" type="text/javascript"></script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-74717651-1', 'auto');
+                ga('send', 'pageview');
+
+</script>
+
+
+<style type="text/css">a.gumroad-button { background-color: white !important; background-image: url("https://gumroad.com/button/button_bar.jpg") !important; background-repeat: repeat-x !important; border-radius: 4px !important; box-shadow: rgba(0, 0, 0, 0.4) 0 0 2px !important; color: #999 !important; display: inline-block !important; font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !important; font-size: 16px !important; font-style: normal !important; font-weight: 500 !important; line-height: 50px !important; padding: 0 15px !important; text-shadow: none !important; text-decoration: none !important; } .gumroad-button-logo { background-image: url("https://gumroad.com/button/button_logo.png") !important; background-size: cover !important; height: 17px !important; width: 16px !important; display: inline-block !important; margin-bottom: -3px !important; margin-right: 15px !important; } .gumroad-loading-indicator { background: white; border-radius: 50%; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); box-sizing: border-box; display: none; height: 60px; left: 50% !important; margin-left: -30px !important; margin-top: -30px !important; padding: 10px; position: fixed; top: 50% !important; width: 60px; z-index: 99997; } .gumroad-loading-indicator i { background: url("https://gumroad.com/js/loading-rainbow.svg"); height: 40px; width: 40px; display: inline-block; background-size: contain; animation: gumroad-spin 1.5s infinite linear; } .gumroad-scroll-container { -webkit-overflow-scrolling: touch; overflow-y: auto; position: fixed !important; z-index: 99998 !important; top: 0 !important; right: 0 !important; -ms-overflow-style: none; scrollbar-width: none; } .gumroad-scroll-container::-webkit-scrollbar { display: none; } .gumroad-overlay-iframe { position: absolute; min-width: 100%; min-height: 100%; border: none !important; text-align: left; } @keyframes gumroad-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(359deg); } } </style></head>
+<body id="top" class="">
+    <div id="sb-site" style="min-height: 635px;">
+                <header id="header" class="scrolled">
+            <div class="header-inside">
+                <div id="logo">
+                    <h1><a href="http://imagehover.io/">imagehover.css</a></h1>
+                </div>
+                <div id="navbar">
+                                                                                
+<ul class="navigation">
+                                    <li class="">
+                <a href="http://imagehover.io/">
+                                        Home
+                </a>
+            </li>
+                                <li class="active">
+                <a href="http://imagehover.io/docs">
+                                        Documentation
+                </a>
+            </li>
+                                <li class="">
+                <a href="mailto:info@imagehover.io?Subject=ImageHover.css%20Support">
+                                        Contact
+                </a>
+            </li>
+                    </ul>
+
+                                        <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
+                </div>
+            </div>
+        </header>
+        
+        
+                <section id="body" class="">
+            	<h3>Basic Usage</h3>
+<div><p>1. Include the stylesheet on your document's `&lt;head&gt;`</p></div>
+<script src="./Imagehover. - Delays and Effects_files/477d475ccbb604d4539a.js.descarga"></script><link rel="stylesheet" href="./Imagehover. - Delays and Effects_files/gist-embed-8cf56b5c89cac9b5222111d39f3ba7d7.css"><div id="gist32970859" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-imagehoverhead-html" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-imagehoverhead-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-imagehoverhead-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-imagehoverhead-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-imagehoverhead-html-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">link</span> <span class="pl-c1">rel</span>="<span class="pl-s">stylesheet</span>" <span class="pl-c1">href</span>="<span class="pl-s">css/imagehover.min.css</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-imagehoverhead-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-imagehoverhead-html-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/ciar4n/477d475ccbb604d4539a/raw/3ff9842a17fc2baec29bd5ac6ab7e6cb65c004c6/imagehoverhead.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/ciar4n/477d475ccbb604d4539a#file-imagehoverhead-html">imagehoverhead.html</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<div><p>2. Place the following markup in to your HTML document</p></div>
+<script src="./Imagehover. - Delays and Effects_files/b40cdf17cd51c8389abf.js.descarga"></script><link rel="stylesheet" href="./Imagehover. - Delays and Effects_files/gist-embed-8cf56b5c89cac9b5222111d39f3ba7d7.css"><div id="gist32969964" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-markup-css" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-css  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-markup-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-markup-css-LC1" class="blob-code blob-code-inner js-file-line">&lt;figure class<span class="pl-c1">=</span><span class="pl-s">"imghvr-fade"</span><span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markup-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-markup-css-LC2" class="blob-code blob-code-inner js-file-line">    &lt;img src<span class="pl-c1">=</span><span class="pl-s">"#"</span><span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markup-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-markup-css-LC3" class="blob-code blob-code-inner js-file-line">    &lt;figcaption<span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markup-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-markup-css-LC4" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">/</span><span class="pl-c1">/</span> <span class="pl-ent">Hover</span> <span class="pl-ent">Content</span></td>
+      </tr>
+      <tr>
+        <td id="file-markup-css-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-markup-css-LC5" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-c1">/</span>figcaption<span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markup-css-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-markup-css-LC6" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-c1">/</span>figure<span class="pl-c1">&gt;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/ciar4n/b40cdf17cd51c8389abf/raw/07fcc618273c3c7cffd3300c40cf8273fc5d82e9/markup.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/ciar4n/b40cdf17cd51c8389abf#file-markup-css">markup.css</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<div><p>3. Edit the URL to your image and add your hover content. Then simply set the imagehover.css class of your choice to the containing figure element. In the example above this has been set to 'imghvr-fade'. A full list of hover effects and their classes can be found [here!](http://www.imagehover.io/).</p></div>
+<hr>
+<h3>Adding a Link</h3>
+<p>To link your image, add an empty &lt;a&gt; tag just after the figcaption element of your markup. Set the <strong>href</strong> attribute to the URL you wish to link your image to.</p>
+<script src="./Imagehover. - Delays and Effects_files/30cfbea7fa8b2b6ae95b.js.descarga"></script><link rel="stylesheet" href="./Imagehover. - Delays and Effects_files/gist-embed-8cf56b5c89cac9b5222111d39f3ba7d7.css"><div id="gist32970620" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-markuplink-css" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-css  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-markuplink-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-markuplink-css-LC1" class="blob-code blob-code-inner js-file-line">&lt;figure class<span class="pl-c1">=</span><span class="pl-s">"imghvr-fade"</span><span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markuplink-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-markuplink-css-LC2" class="blob-code blob-code-inner js-file-line">    &lt;img src<span class="pl-c1">=</span><span class="pl-s">"#"</span><span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markuplink-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-markuplink-css-LC3" class="blob-code blob-code-inner js-file-line">    &lt;figcaption<span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markuplink-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-markuplink-css-LC4" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">/</span><span class="pl-c1">/</span> <span class="pl-ent">Hover</span> <span class="pl-ent">Content</span></td>
+      </tr>
+      <tr>
+        <td id="file-markuplink-css-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-markuplink-css-LC5" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-c1">/</span>figcaption<span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markuplink-css-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-markuplink-css-LC6" class="blob-code blob-code-inner js-file-line">    &lt;a <span class="pl-ent">href</span><span class="pl-c1">=</span><span class="pl-s">"#"</span><span class="pl-c1">&gt;</span>&lt;<span class="pl-c1">/</span>a<span class="pl-c1">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-markuplink-css-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-markuplink-css-LC7" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-c1">/</span>figure<span class="pl-c1">&gt;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/ciar4n/30cfbea7fa8b2b6ae95b/raw/58d0c3ed9c48b884eede16d6477c550b73d123e1/markuplink.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/ciar4n/30cfbea7fa8b2b6ae95b#file-markuplink-css">markuplink.css</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<hr>
+<h3>Background Color</h3>
+<p>All background colors are inherited from the containing &lt;figure&gt; element. You can change the background color via some inline CSS added to the figure element like so...</p>
+<script src="./Imagehover. - Delays and Effects_files/5600372bb75ed980976a.js.descarga"></script><link rel="stylesheet" href="./Imagehover. - Delays and Effects_files/gist-embed-8cf56b5c89cac9b5222111d39f3ba7d7.css"><div id="gist32973712" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-inline-bg-color-html" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-inline-bg-color-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-inline-bg-color-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">figure</span> <span class="pl-c1">class</span>="<span class="pl-s">imghvr-fade</span>" <span class="pl-c1">style</span>="<span class="pl-s">background-color:#D14233;</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-inline-bg-color-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-inline-bg-color-html-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">#</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-inline-bg-color-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-inline-bg-color-html-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">figcaption</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-inline-bg-color-html-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-inline-bg-color-html-LC4" class="blob-code blob-code-inner js-file-line">    // Hover Content</td>
+      </tr>
+      <tr>
+        <td id="file-inline-bg-color-html-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-inline-bg-color-html-LC5" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;/</span><span class="pl-ent">figcaption</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-inline-bg-color-html-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-inline-bg-color-html-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">figure</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/ciar4n/5600372bb75ed980976a/raw/7a72ff09fd42789c2dfbc66b24980b116c56c957/inline-bg-color.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/ciar4n/5600372bb75ed980976a#file-inline-bg-color-html">inline-bg-color.html</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p>Alternatively this can be applied via your CSS files. The following example will effect all elements with a imagehover.css class applied.</p>
+<script src="./Imagehover. - Delays and Effects_files/4c3edde6f0d86ecb2fe3.js.descarga"></script><link rel="stylesheet" href="./Imagehover. - Delays and Effects_files/gist-embed-8cf56b5c89cac9b5222111d39f3ba7d7.css"><div id="gist32973736" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-css-bg-color-css" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-css  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-css-bg-color-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-css-bg-color-css-LC1" class="blob-code blob-code-inner js-file-line">[<span class="pl-c1">class</span><span class="pl-c1">^=</span><span class="pl-s">'imghvr-'</span>]<span class="pl-kos">,</span></td>
+      </tr>
+      <tr>
+        <td id="file-css-bg-color-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-css-bg-color-css-LC2" class="blob-code blob-code-inner js-file-line">[<span class="pl-c1">class</span><span class="pl-c1">*=</span><span class="pl-s">' imghvr-'</span>] {</td>
+      </tr>
+      <tr>
+        <td id="file-css-bg-color-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-css-bg-color-css-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">background-color</span>: <span class="pl-pds"><span class="pl-kos">#</span>D14233</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-css-bg-color-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-css-bg-color-css-LC4" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/ciar4n/4c3edde6f0d86ecb2fe3/raw/3bf04ec05d688012868d1ac1f4a77a5b15da168c/css-bg-color.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/ciar4n/4c3edde6f0d86ecb2fe3#file-css-bg-color-css">css-bg-color.css</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<hr>
+<h3>Browser Support</h3>
+<p>Imagehover.css relies heavily on some CSS3 features including pseudo-elements, animations, transitions and transforms. Some older browsers will have limited support of these features. </p>
+<hr>
+<h3>Utility Classes (Extended Only)</h3>
+<p>Utility classes allow you to add unique animations to each element of your caption upon hover of the image. There are 2 types of utility classes, an effect class and a delay class. One of each class can be added to each element where the effect class sets the animation type and the delay class set the delay before the animation is triggered relative to the image been hovered.</p>
+<div class="effects pure-g">
+<div class="demo pure-u-1 pure-u-sm-1-1 pure-u-md-1-3">
+<figure class="imghvr-stack-up example-custom">
+<img src="./Imagehover. - Delays and Effects_files/example-custom.jpg" alt="example-image">
+<figcaption>
+<h3 class="ih-fade-down ih-delay-sm ">Oscar Wilde</h3>
+<p class="ih-zoom-in ih-delay-md"><i>"I have the simplest tastes, I am always satisfied with the best."</i></p>
+<a class="ih-fade-up ih-delay-lg button primary" href="http://imagehover.io/docs#">Read More</a>
+</figcaption>
+<a href="javascript:;"></a>
+</figure>
+</div>
+<div class="pure-u-1 pure-u-sm-1-1 pure-u-md-2-3" style="padding-top: 10px;">
+<script src="./Imagehover. - Delays and Effects_files/a3c1d173933660160393d7d97741ee19.js.descarga"></script><link rel="stylesheet" href="./Imagehover. - Delays and Effects_files/gist-embed-8cf56b5c89cac9b5222111d39f3ba7d7.css"><div id="gist34190265" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-utility-example-html" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-utility-example-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-utility-example-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">figure</span> <span class="pl-c1">class</span>="<span class="pl-s">imghvr-stack-up</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-utility-example-html-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">#</span>" <span class="pl-c1">alt</span>="<span class="pl-s">example-image</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-utility-example-html-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">figcaption</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-utility-example-html-LC4" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">h3</span> <span class="pl-c1">class</span>="<span class="pl-s">ih-fade-down ih-delay-sm </span>"<span class="pl-kos">&gt;</span>Oscar Wilde<span class="pl-kos">&lt;/</span><span class="pl-ent">h3</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-utility-example-html-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span> <span class="pl-c1">class</span>="<span class="pl-s">ih-zoom-in ih-delay-md</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-utility-example-html-LC6" class="blob-code blob-code-inner js-file-line">      <span class="pl-kos">&lt;</span><span class="pl-ent">i</span><span class="pl-kos">&gt;</span>"I have the simplest tastes, I am always satisfied with the best."<span class="pl-kos">&lt;/</span><span class="pl-ent">i</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-utility-example-html-LC7" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-utility-example-html-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">class</span>="<span class="pl-s">ih-fade-up ih-delay-lg button</span>" <span class="pl-c1">href</span>="<span class="pl-s">#</span>"<span class="pl-kos">&gt;</span>Read More<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-utility-example-html-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;/</span><span class="pl-ent">figcaption</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-utility-example-html-LC10" class="blob-code blob-code-inner js-file-line">  <span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>="<span class="pl-s">#</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-utility-example-html-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-utility-example-html-LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">figure</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/ciar4n/a3c1d173933660160393d7d97741ee19/raw/ebfcbb17069a1eb79cdf29d58bf0d8b1b6f3afd4/utility-example.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/ciar4n/a3c1d173933660160393d7d97741ee19#file-utility-example-html">utility-example.html</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+<div class="effects pure-g">
+<h5 style="width:100%">Effects</h5>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade-up">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade-up</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade-down">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade-down</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade-left">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade-left</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade-right">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade-right</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade-up-big">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade-up-big</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade-down-big">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade-down-big</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade-left-big">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade-left-big</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-fade-right-big">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-fade-right-big</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-zoom-in">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-zoom-in</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-zoom-out">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-zoom-out</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-flip-x">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-flip-x</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-flip-y">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-flip-y</textarea>
+</div>
+
+<h5 style="width:100%">Delays</h5>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-delay-xs">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-delay-xs</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-delay-sm">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-delay-sm</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-delay-md">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-delay-md</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-delay-lg">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-delay-lg</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-delay-xl">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-delay-xl</textarea>
+</div>
+<div class="demo pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+  <figure class="imghvr-fade utility">
+    <figcaption>
+      <h3 class="ih-delay-xxl">Hello World</h3>
+    </figcaption><a href="javascript:;"></a>
+  </figure>
+  <textarea onclick="this.focus();this.select()" readonly="readonly">ih-delay-xxl</textarea>
+</div>
+</div>
+<hr>
+<div class="ad">
+<script async="" src="./Imagehover. - Delays and Effects_files/f.txt"></script>
+<!-- Imagehover.io Responsive -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1273885476291362" data-ad-slot="7197678738" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+        </section>
+        
+                <footer id="footer">
+            <div class="totop">
+                <span><a href="http://imagehover.io/docs#" id="toTop"><i class="fa fa-chevron-up"></i></a></span>
+            </div>
+            <p>A CSS Library created by <a href="https://joomla51.com/">Joomla51</a></p>
+        </footer>
+            </div>
+    <div class="sb-slidebar sb-left sb-width-thin">
+        <div id="panel">
+        
+<ul class="navigation">
+                                    <li class="">
+                <a href="http://imagehover.io/">
+                                        Home
+                </a>
+            </li>
+                                <li class="active">
+                <a href="http://imagehover.io/docs">
+                                        Documentation
+                </a>
+            </li>
+                                <li class="">
+                <a href="mailto:info@imagehover.io?Subject=ImageHover.css%20Support">
+                                        Contact
+                </a>
+            </li>
+                    </ul>
+
+        </div>
+    </div>
+            
+        <script>
+        $(function () {
+            $(document).ready(function() {
+              $.slidebars({
+                hideControlClasses: true,
+                scrollLock: true
+              });
+            });
+        });
+        </script>
+    
+
+<div class="gumroad-loading-indicator"><i></i></div><div class="gumroad-scroll-container" style="max-width: 1366px; max-height: 635px; width: 0px; height: 0px;"><iframe scrolling="no" allowfullscreen="allowfullscreen" class="gumroad-overlay-iframe" src="./Imagehover. - Delays and Effects_files/overlay_page.html"></iframe></div></body></html>

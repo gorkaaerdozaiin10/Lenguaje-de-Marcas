@@ -1,0 +1,198 @@
+@import 'format', 'variables', 'mixins';
+
+.max-container {
+  width: 100vw;
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(10px);
+    background: url(../img/flores.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+nav {
+  box-shadow: $shadow;
+  width: 100%;
+  min-height: 12%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 0 4em;
+  transition: 0.5s ease all;
+
+  .logo {
+    text-decoration: none;
+    color: rgba($color: $primary-white, $alpha: 0.85);
+  }
+
+  ul {
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 0.5em 0;
+
+      &.active {
+        border-bottom: 2px solid rgba($color: #000000, $alpha: 0.3);
+      }
+
+      a {
+        margin: 1em;
+        padding: 0.7em 0;
+        text-decoration: none;
+        color: rgba($color: $primary-white, $alpha: 0.85);
+      }
+    }
+  }
+  &:hover {
+    box-shadow: $hover-shadow;
+  }
+}
+
+#fp-nav ul li {
+  a span {
+    background: $primary-white;
+  }
+  .fp-tooltip {
+    color: $primary-white;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .slide {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+  }
+
+  .fp-controlArrow {
+    display: none;
+    &.fp-prev {
+      transform: scale(0.5);
+      top: 90%;
+      left: 70%;
+      animation: slides 2s linear infinite;
+
+      @keyframes slides {
+        30% {
+          transform: scale(0.6);
+        }
+        60% {
+          transform: scale(0.5);
+        }
+      }
+
+      &:hover {
+        animation: none;
+      }
+    }
+    &.fp-next {
+      @extend .fp-prev;
+      left: unset;
+      right: 10%;
+    }
+  }
+
+  .fp-slidesNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.glider__container {
+  position: relative;
+  width: 80vw;
+
+  .glider {
+    border-radius: 10px;
+    box-shadow: $shadow;
+    transition: 0.5s ease all;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      box-shadow: $hover-shadow;
+    }
+  }
+
+  @keyframes buttonAnimation {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.3);
+    }
+    50% {
+      transform: scale(1.6);
+    }
+    75% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .button-prev {
+    transition: 0.5s ease all;
+    opacity: 0.4;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 2.5em;
+    border-radius: 0;
+    background: none;
+    position: absolute;
+    top: 50% - 8%;
+    left: -4%;
+    z-index: 1000;
+    animation: buttonAnimation 3s linear infinite;
+    &:hover {
+      transform: scale(1.3);
+      opacity: 0.7;
+      animation: none;
+    }
+  }
+  .button-next {
+    @extend .button-prev;
+    right: -4%;
+    left: unset;
+  }
+  .dots {
+    .glider-dot {
+      margin-top: 5vh;
+      width: 4vw;
+      height: 1.5vh;
+      transition: 0.5s ease all;
+
+      &.active {
+        background: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}
